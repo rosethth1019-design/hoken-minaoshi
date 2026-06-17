@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>保険選びのポイント</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Hiragino Sans', 'Meiryo', sans-serif; background: #f5f7fa; color: #333; padding: 20px; }
+  h1 { text-align: center; font-size: 20px; color: #2c3e50; margin-bottom: 6px; padding: 16px; background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .subtitle { text-align: center; font-size: 13px; color: #888; margin-bottom: 24px; }
+  
+  .section { background: white; border-radius: 12px; padding: 16px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .section-title { font-size: 16px; font-weight: bold; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 3px solid #eee; }
+
+  .insurance-type { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+  .insurance-name { font-size: 18px; font-weight: bold; margin-bottom: 4px; }
+  .insurance-desc { font-size: 13px; opacity: 0.9; }
+
+  .criteria-box { background: #f0f9ff; border: 1.5px solid #93c5fd; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+  .criteria-title { font-size: 13px; font-weight: bold; color: #1e40af; margin-bottom: 8px; }
+  .criteria-content { font-size: 13px; color: #334155; line-height: 1.7; }
+
+  .checklist { list-style: none; }
+  .checklist li { display: flex; gap: 8px; margin-bottom: 8px; font-size: 13px; }
+  .checklist li:before { content: "✓"; color: #16a34a; font-weight: bold; flex-shrink: 0; }
+
+  .table-wrapper { overflow-x: auto; margin-bottom: 12px; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f1f5f9; padding: 10px 6px; text-align: left; font-size: 12px; color: #555; font-weight: bold; }
+  td { padding: 10px 6px; border-bottom: 1px solid #f1f5f9; }
+
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 6px; font-size: 11px; font-weight: bold; }
+  .badge-blue { background: #dbeafe; color: #1e40af; }
+  .badge-green { background: #dcfce7; color: #16a34a; }
+  .badge-yellow { background: #fef3c7; color: #ca8a04; }
+
+  .note { background: #fffbeb; border-left: 3px solid #f59e0b; padding: 10px 12px; border-radius: 0 8px 8px 0; font-size: 12px; color: #78350f; margin-top: 12px; }
+
+  .pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+  .pros { background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 8px; padding: 10px; }
+  .cons { background: #fee2e2; border: 1.5px solid #fca5a5; border-radius: 8px; padding: 10px; }
+  .pros-title { font-size: 12px; font-weight: bold; color: #166534; margin-bottom: 6px; }
+  .cons-title { font-size: 12px; font-weight: bold; color: #991b1b; margin-bottom: 6px; }
+  .pros-item, .cons-item { font-size: 12px; line-height: 1.6; }
+
+  .compare-section { background: #f8fafc; border-radius: 10px; padding: 14px; margin-bottom: 12px; }
+  .compare-title { font-size: 13px; font-weight: bold; color: #475569; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<h1>🛡️ 保険選びのポイント</h1>
+<p class="subtitle">収入保障保険 vs がん保険 の選び方</p>
+
+<!-- ========== 収入保障保険 ========== -->
+<div class="section">
+  <div class="section-title">💼 収入保障保険の選び方</div>
+
+  <div class="insurance-type">
+    <div class="insurance-name">収入保障保険（就業不能保障付き）</div>
+    <div class="insurance-desc">パパが働けなくなったときに毎月お金が振り込まれる保険</div>
+  </div>
+
+  <!-- 選ぶ際の観点 -->
+  <div style="margin-bottom:20px;">
+    <div style="font-size:14px;font-weight:bold;color:#333;margin-bottom:12px;">🎯 選ぶ際の5つの観点</div>
+
+    <!-- 1. 月額保障額 -->
+    <div class="criteria-box">
+      <div class="criteria-title">① 月額保障額はいくらにするか</div>
+      <div class="criteria-content">
+        <strong>この家庭の計算：</strong><br>
+        毎月の生活費 28万円 − 遺族年金 17万円 = <span style="color:#dc2626;font-weight:bold;">月11万円不足</span><br>
+        <br>
+        <strong>おすすめ：月15万円</strong><br>
+        不足分（11万円）より少し多めに設定して、余裕を持たせる
+      </div>
+    </div>
+
+    <!-- 2. 保障期間 -->
+    <div class="criteria-box">
+      <div class="criteria-title">② 保障期間は何歳までか</div>
+      <div class="criteria-content">
+        <strong>選択肢：</strong><br>
+        • 60歳まで<br>
+        • 65歳まで<br>
+        • 70歳まで<br>
+        <br>
+        <strong>この家庭は「65歳まで」がおすすめ</strong><br>
+        末っ子が独立する頃（約25年後）、妻の老後も少し保障できる
+      </div>
+    </div>
+
+    <!-- 3. 保障内容 -->
+    <div class="criteria-box">
+      <div class="criteria-title">③ 就業不能の定義を確認する</div>
+      <div class="criteria-content">
+        <strong>3つのパターンがある：</strong><br>
+        <br>
+        ◆ <strong>狭い定義</strong>：「働けない状態」が厳しく定義（入院中など）<br>
+        　→ 給付金が出にくい<br>
+        <br>
+        ◆ <strong>中程度</strong>：「病気やケガで就業不能」がスタンダード<br>
+        　→ バランス型<br>
+        <br>
+        ◆ <strong>広い定義</strong>：「診断確定で給付開始」など条件がゆるい<br>
+        　→ 給付しやすいが保険料が高い<br>
+        <br>
+        <strong>おすすめ：中程度の定義</strong>
+      </div>
+    </div>
+
+    <!-- 4. 給付金の受け取り方 -->
+    <div class="criteria-box">
+      <div class="criteria-title">④ 給付金はいつから受け取れるか</div>
+      <div class="criteria-content">
+        <strong>2つの選択肢：</strong><br>
+        <br>
+        ✓ <strong>180日型（半年待つ）</strong><br>
+        　保険料が安い。会社の傷病手当金（約1年半）をもらった後が対象<br>
+        <br>
+        ✓ <strong>90日型（3ヶ月待つ）</strong><br>
+        　保険料が高いが、給付開始が早い。より安心<br>
+        <br>
+        <strong>この家庭は「180日型」でOK</strong><br>
+        会社員なら傷病手当金があるから、3ヶ月待つのは問題ない
+      </div>
+    </div>
+
+    <!-- 5. 保険料の手数料 -->
+    <div class="criteria-box">
+      <div class="criteria-title">⑤ 保険料と手数料のバランス</div>
+      <div class="criteria-content">
+        <strong>確認すること：</strong><br>
+        • 月5,000〜8,000円の範囲内か<br>
+        • 事務手数料や年間費用がないか<br>
+        • 更新型（保険料が上がる）か、全期型（変わらない）か<br>
+        <br>
+        <strong>おすすめ：全期型で月8,000円以下</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- 比較表 -->
+  <div style="margin-top:20px;">
+    <div style="font-size:14px;font-weight:bold;color:#333;margin-bottom:10px;">📊 商品比較時の確認項目</div>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>確認項目</th>
+          <th>優先度</th>
+          <th>チェックポイント</th>
+        </tr>
+        <tr>
+          <td>月額保障</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>月15万円か確認</td>
+        </tr>
+        <tr>
+          <td>保障期間</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>65歳までか確認</td>
+        </tr>
+        <tr>
+          <td>就業不能の定義</td>
+          <td><span class="badge badge-blue">重要</span></td>
+          <td>「働けない」の範囲を確認</td>
+        </tr>
+        <tr>
+          <td>待機期間</td>
+          <td><span class="badge badge-blue">重要</span></td>
+          <td>180日型で大丈夫</td>
+        </tr>
+        <tr>
+          <td>保険料</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>月8,000円以下</td>
+        </tr>
+        <tr>
+          <td>特約</td>
+          <td><span class="badge badge-yellow">参考</span></td>
+          <td>シンプルなもので十分</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note">
+    💡 <strong>複数の商品を比較しよう！</strong><br>
+    どこで加入できるか確認：保険代理店、ネット保険、銀行など。複数見積もりを取ることをおすすめします。
+  </div>
+</div>
+
+<!-- ========== がん保険 ========== -->
+<div class="section">
+  <div class="section-title">🏥 がん保険の選び方</div>
+
+  <div class="insurance-type" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+    <div class="insurance-name">がん保険</div>
+    <div class="insurance-desc">がんと診断されたときや治療時にお金が支給される保険</div>
+  </div>
+
+  <!-- 選ぶ際の観点 -->
+  <div style="margin-bottom:20px;">
+    <div style="font-size:14px;font-weight:bold;color:#333;margin-bottom:12px;">🎯 選ぶ際の5つの観点</div>
+
+    <!-- 1. 診断一時金 -->
+    <div class="criteria-box" style="background:#fef2f2;border-color:#fca5a5;">
+      <div class="criteria-title" style="color:#991b1b;">① 診断一時金はいくらか</div>
+      <div class="criteria-content">
+        <strong>がん保険のキモはこれ！</strong><br>
+        「がんと診断確定されたら」一括でもらえるお金<br>
+        <br>
+        <strong>金額の目安：</strong><br>
+        • 50万円（シンプル）<br>
+        • 100万円（標準）←おすすめ<br>
+        • 200万円（手厚い）<br>
+        <br>
+        <strong>この家庭は「100万円」が目安</strong><br>
+        治療費の不安や、仕事を休むときの生活費に使える
+      </div>
+    </div>
+
+    <!-- 2. 入院・手術給付 -->
+    <div class="criteria-box" style="background:#fef2f2;border-color:#fca5a5;">
+      <div class="criteria-title" style="color:#991b1b;">② 入院・手術時の日額はいくらか</div>
+      <div class="criteria-content">
+        <strong>最近のがん治療は「通院中心」：</strong><br>
+        • 入院：短期（手術の前後など）<br>
+        • 通院：長期（抗がん剤治療など）<br>
+        <br>
+        <strong>確認項目：</strong><br>
+        • 入院日額：10,000円〜15,000円<br>
+        • 手術給付金：あるか<br>
+        • <span style="color:#dc2626;font-weight:bold;">通院給付金：あるか（重要！）</span><br>
+        <br>
+        <strong>おすすめ：入院・手術・通院すべてカバー</strong>
+      </div>
+    </div>
+
+    <!-- 3. 放射線・抗がん剤治療 -->
+    <div class="criteria-box" style="background:#fef2f2;border-color:#fca5a5;">
+      <div class="criteria-title" style="color:#991b1b;">③ 最新治療もカバーしているか</div>
+      <div class="criteria-content">
+        <strong>最近のがん治療：</strong><br>
+        • 放射線治療（毎回給付）<br>
+        • 抗がん剤治療（毎回給付）<br>
+        • 免疫療法<br>
+        <br>
+        <strong>確認すること：</strong><br>
+        「通院して放射線治療」→ 給付金が出るか<br>
+        「通院して抗がん剤治療」→ 給付金が出るか<br>
+        <br>
+        <strong>古い保険だと給付されないことも！新しい商品を選ぼう</strong>
+      </div>
+    </div>
+
+    <!-- 4. 保障期間と更新 -->
+    <div class="criteria-box" style="background:#fef2f2;border-color:#fca5a5;">
+      <div class="criteria-title" style="color:#991b1b;">④ 保障期間は何歳までか</div>
+      <div class="criteria-content">
+        <strong>2つのタイプがある：</strong><br>
+        <br>
+        ✓ <strong>終身タイプ</strong>：一生保障される<br>
+        　保険料が高め。でも安心<br>
+        <br>
+        ✓ <strong>更新型</strong>：10年ごとに更新。保険料が上がる<br>
+        　最初は安いが、更新のたびに高くなる<br>
+        <br>
+        <strong>この家庭は「終身タイプ」をおすすめ</strong><br>
+        30代から加入すれば、生涯の安心が得られる
+      </div>
+    </div>
+
+    <!-- 5. 保険料 -->
+    <div class="criteria-box" style="background:#fef2f2;border-color:#fca5a5;">
+      <div class="criteria-title" style="color:#991b1b;">⑤ 保険料の相場</div>
+      <div class="criteria-content">
+        <strong>30代・非喫煙の相場：</strong><br>
+        • シンプル：月1,500〜2,000円<br>
+        • 標準：月2,500〜3,500円 ←おすすめ<br>
+        • 手厚い：月4,000〜5,000円<br>
+        <br>
+        <strong>この家庭は「月2,000〜3,000円」の範囲で探す</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- 比較表 -->
+  <div style="margin-top:20px;">
+    <div style="font-size:14px;font-weight:bold;color:#333;margin-bottom:10px;">📊 商品比較時の確認項目</div>
+    <div class="table-wrapper">
+      <table>
+        <tr>
+          <th>確認項目</th>
+          <th>優先度</th>
+          <th>チェックポイント</th>
+        </tr>
+        <tr>
+          <td>診断一時金</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>100万円程度はあるか</td>
+        </tr>
+        <tr>
+          <td>入院給付金</td>
+          <td><span class="badge badge-blue">重要</span></td>
+          <td>日額10,000円以上</td>
+        </tr>
+        <tr>
+          <td>通院給付金</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>最新治療対応しているか</td>
+        </tr>
+        <tr>
+          <td>放射線・抗がん剤治療</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>給付金が出るか確認</td>
+        </tr>
+        <tr>
+          <td>保障期間</td>
+          <td><span class="badge badge-blue">重要</span></td>
+          <td>終身型か更新型か</td>
+        </tr>
+        <tr>
+          <td>保険料</td>
+          <td><span class="badge badge-green">必須</span></td>
+          <td>月3,000円以下</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="note">
+    💡 <strong>がん保険は「診断一時金」が重要！</strong><br>
+    最初にまとまったお金をもらえるので、治療費や生活費の心配が減ります。複数商品を比較して、通院対応している新しい商品を選びましょう。
+  </div>
+</div>
+
+<!-- ========== 実際の比較方法 ========== -->
+<div class="section">
+  <div class="section-title">📋 実際に保険を探す時のステップ</div>
+
+  <div style="margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">ステップ①：商品を3つ集める</div>
+    <div style="background:#f0f9ff;border-radius:8px;padding:12px;font-size:13px;line-height:1.7;">
+      保険代理店で複数見積もりをもらう。または：<br>
+      • 生保レディ<br>
+      • ネット保険（SBI、楽天、au保険など）<br>
+      • 銀行の保険窓口<br>
+      <br>
+      <strong>「月5,000〜8,000円で、月15万円の収入保障」や「月2,500〜3,500円でがん保険を探してます」と言おう</strong>
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">ステップ②：上の「確認項目」で比較する</div>
+    <div style="background:#f0f9ff;border-radius:8px;padding:12px;font-size:13px;line-height:1.7;">
+      3つの商品それぞれについて、確認項目をチェック。<br>
+      保険料・保障内容・わかりやすさで比較する。
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">ステップ③：信頼できる人に相談</div>
+    <div style="background:#f0f9ff;border-radius:8px;padding:12px;font-size:13px;line-height:1.7;">
+      保険は複雑なので、<span style="color:#dc2626;font-weight:bold;">独立系FP</span>（保険を売らないFP）に相談するのがおすすめ。<br>
+      「FP相談 独立系 無料」で検索してみて。
+    </div>
+  </div>
+
+  <div style="margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">ステップ④：加入する</div>
+    <div style="background:#f0f9ff;border-radius:8px;padding:12px;font-size:13px;line-height:1.7;">
+      決めたら加入手続き。<br>
+      健康告知があるので、正直に記入すること。
+    </div>
+  </div>
+</div>
+
+<!-- ========== まとめ ========== -->
+<div class="section">
+  <div class="section-title">🎯 最終チェックリスト</div>
+
+  <div style="margin-bottom:16px;">
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">収入保障保険</div>
+    <ul class="checklist">
+      <li>月15万円の保障か確認した ✓</li>
+      <li>65歳までの保障期間か確認した ✓</li>
+      <li>就業不能の定義が中程度か確認した ✓</li>
+      <li>待機期間が180日か確認した ✓</li>
+      <li>保険料が月8,000円以下か確認した ✓</li>
+      <li>複数商品を比較した ✓</li>
+    </ul>
+  </div>
+
+  <div>
+    <div style="font-size:14px;font-weight:bold;color:#2c3e50;margin-bottom:10px;">がん保険</div>
+    <ul class="checklist">
+      <li>診断一時金が100万円程度か確認した ✓</li>
+      <li>通院給付金があるか確認した ✓</li>
+      <li>放射線・抗がん剤治療に対応しているか確認した ✓</li>
+      <li>終身型か確認した ✓</li>
+      <li>保険料が月3,000円以下か確認した ✓</li>
+      <li>複数商品を比較した ✓</li>
+    </ul>
+  </div>
+</div>
+
+</body>
+</html>
